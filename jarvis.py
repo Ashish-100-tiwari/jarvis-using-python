@@ -41,20 +41,22 @@ if __name__ =="__main__":
     wishme()
     # takecommand()
     while True:
-       query = takecommand().lower()
-    if 'wikipedia' in query:
-        speak('searching wikipedia...')
-        query= query.replace("wikipedia","")
-        results = wikipedia.summary(query,sentences =2)
-        speak("Accoding to wikipedia")
-        speak(results)
-    elif 'open youtube' in query:
-        webbrowser.open("youtube.com")
-    elif 'microsoft edge' in query:
-        webbrowser.open("bing.com")
-    elif 'open linkedin' in query:
-        webbrowser.open("linkedin.com")
-    elif 'open github' in query:
-        webbrowser.open("github.com")        
-    elif 'open mail' in query:
-        webbrowser.open("gmail.com")       
+        query = takecommand().lower()
+        if 'wikipedia' in query:
+            speak('searching wikipedia...')
+            query= query.replace("wikipedia","")
+            results = wikipedia.summary(query,sentences =2)
+            speak("Accoding to wikipedia")
+            speak(results)
+        elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
+        elif 'microsoft edge' in query:
+            webbrowser.open("bing.com")
+        elif 'open linkedin' in query:
+            webbrowser.open("linkedin.com")
+        elif 'open github' in query:
+            webbrowser.open("github.com")        
+        elif 'open mail' in query:
+            webbrowser.open("gmail.com")
+        elif 'quit' in query:
+            exit()           
