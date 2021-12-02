@@ -58,5 +58,15 @@ if __name__ =="__main__":
             webbrowser.open("github.com")        
         elif 'open mail' in query:
             webbrowser.open("gmail.com")
+        elif 'open slack' in query:
+            webbrowser.open("slack.com")
+        elif 'open facebook' in query:
+            webbrowser.open("facebook.com")
+        elif 'open instagram' in query:
+            webbrowser.open("instagram.com")
+        elif ' hello' in query:
+            speak("hey")
+        elif 'how are you' in query:
+            speak("i am good ")                         
         elif 'quit' in query:
             exit()           
